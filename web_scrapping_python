@@ -1,8 +1,14 @@
+#creating web scrapping using python
+#author : Rosmaini Dollah (2014845352)
+
+
 import urllib
 import re
 from bs4 import BeautifulSoup
 
+#to open the page
 url = "http://fskm.uitm.edu.my/v1/fakulti/staff-directory/academic/1097.html/"
+r  = requests.get("http://" +url)
 
 page = urllib.urlopen(url).read()
 soup = BeautifulSoup(page)
